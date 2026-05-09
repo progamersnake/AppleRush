@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleRush - Catch the Apples!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>🍎 AppleRush</h1>
+            <div class="stats">
+                <div class="stat">
+                    <span class="label">Score:</span>
+                    <span class="value" id="score">0</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Lives:</span>
+                    <span class="value" id="lives">3</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Level:</span>
+                    <span class="value" id="level">1</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-area" id="gameArea">
+            <div class="basket" id="basket"></div>
+        </div>
+        
+        <div class="controls">
+            <p>Use <strong>LEFT</strong> and <strong>RIGHT</strong> arrow keys to move</p>
+            <p id="gameStatus" class="status">Get Ready!</p>
+            <button id="startBtn" class="btn">Start Game</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
